@@ -92,6 +92,7 @@ footer {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    gap: 8px;
     height: 40px;
     padding: 0 25px;
     border: none;
@@ -104,6 +105,12 @@ footer {
     transform-origin: center;
     will-change: transform;
     color: black;
+}
+
+.buttons .icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 .button-container .buttons:first-child:hover {
@@ -127,4 +134,38 @@ footer {
     top: 0;
     transform: translateX(-50%);
     transition: top 0.3s ease, left 0.3s ease;
+}
+
+.vertical-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    height: auto;
+}
+
+.vertical-buttons .buttons {
+    position: static;
+    transform: none;
+}
+
+.vertical-buttons .buttons:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#choose-lang {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
